@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,7 +50,7 @@ namespace Test
                 poc++;
             }
 
-            if (checkBox2.Checked && checkBox3.Checked)
+            if (checkBox2.Checked && checkBox3.Checked && !checkBox1.Checked && !checkBox4.Checked)
             {
                 poc++;
             }
@@ -71,6 +71,9 @@ namespace Test
                 poc++;
             }
             Console.Write(poc);
+            label9.Visible = true;
+            label9.Text = "Ziskal si "+poc+" bodov zo 6.";
+            poc = 0;
         }
 
     }
